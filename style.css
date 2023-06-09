@@ -94,3 +94,35 @@ main{
 .a2{
     padding-left: 45px;
 }
+.foot h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 80;
+}
+.foot img{
+    position: absolute;
+    left: 40%;
+    width: 190px;
+    padding-left: 30px;
+}
+.img3{
+    z-index: 2;
+}
+.img1{
+    animation-name: image1r;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes image1r {
+    25%{
+        transform: translateX(500px);
+
+    }
+    50%{
+        transform: translateX();
+        z-index: 3;
+    }
+   
+}
