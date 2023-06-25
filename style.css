@@ -100,29 +100,67 @@ main{
     font-family: serif;
     font-weight: 80;
 }
-.foot img{
+/*/.foot img{
     position: absolute;
     left: 40%;
     width: 190px;
     padding-left: 30px;
+}*/
+.foot img{
+    height: 340px;
+    width: 190px;
+    padding-left: 30px;
 }
 .img3{
-    z-index: 2;
+    position: absolute;
+    left: 43%;
 }
 .img1{
+    position: absolute;
+    left: 5%;
+}
+.img2{
+    position: absolute;
+    left: 20%;
+}
+.img1,.img2{
     animation-name: image1r;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 @keyframes image1r {
-    25%{
-        transform: translateX(500px);
-
-    }
     50%{
+        transform: translateX(920px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.img4{
+    position: absolute;
+    left: 65%;
+}
+.img5{
+    position: absolute;
+    left: 80%;
+}
+.img4,.img5{
+    animation-name: image2r;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes image2r {
+    50%{
+        transform: translateX(-900px);
+    }
+    100%{
         transform: translateX();
-        z-index: 3;
     }
    
 }
+.foot{
+    padding-bottom: 420px;
+}
+
